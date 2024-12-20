@@ -1,8 +1,8 @@
 Marvel Character Browser
-A React-based web application that fetches and displays Marvel characters using the Marvel Comics API. This app supports infinite scrolling for dynamically loading characters, allowing users to explore the Marvel universe seamlessly.
+A React-based web application that fetches and displays Marvel characters using the Marvel Comics API.  Allowing users to explore the Marvel universe..
 
 Features
-Infinite Scrolling: Automatically loads additional characters as the user scrolls.
+Loaded Scrolling: Automatically loads additional characters as the user scrolls and preses the load more button.
 Dynamic Data: Fetches character data directly from the Marvel Comics API.
 Character Details: Displays detailed information about a selected character.
 Responsive Design: Ensures the app works on various screen sizes.
