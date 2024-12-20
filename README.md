@@ -1,8 +1,62 @@
-# React + Vite
+Marvel Character Browser
+A React-based web application that fetches and displays Marvel characters using the Marvel Comics API. This app supports infinite scrolling for dynamically loading characters, allowing users to explore the Marvel universe seamlessly.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Infinite Scrolling: Automatically loads additional characters as the user scrolls.
+Dynamic Data: Fetches character data directly from the Marvel Comics API.
+Character Details: Displays detailed information about a selected character.
+Responsive Design: Ensures the app works on various screen sizes.
+Installation
+Clone the repository:
 
-Currently, two official plugins are available:
+bash
+Copy code
+git clone <repository-url>
+cd <repository-folder>
+Install dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy code
+npm install
+Set up your .env file in the root directory with the following variables:
+
+env
+Copy code
+VITE_PUBLIC_KEY=your_public_key
+VITE_HASH=your_generated_md5_hash
+To get your PUBLIC_KEY and HASH:
+
+Register for the Marvel Comics API at Marvel Developer Portal.
+Generate the HASH using this format: ts + PRIVATE_KEY + PUBLIC_KEY.
+Start the development server:
+
+bash
+Copy code
+npm run dev
+Open the app in your browser:
+
+arduino
+Copy code
+http://localhost:5173/
+Usage
+Scroll down to load more characters.
+Click on a character card to view detailed information, including their name, description, and comics.
+Technologies Used
+React: Front-end library for building the UI.
+Axios: For making HTTP requests.
+Vite: Development environment for building the app.
+Marvel Comics API: For fetching character data.
+Screenshots
+Add screenshots of your app showcasing:
+
+The character grid.
+A detailed character view.
+Known Issues
+API response times may vary, leading to minor delays during data fetching.
+No offline support – the app requires an active internet connection.
+Future Enhancements
+Add search functionality to quickly find specific characters.
+Implement caching to reduce API calls.
+Improve loading indicators for a smoother user experience.
+License
+This project is licensed under the MIT License.
